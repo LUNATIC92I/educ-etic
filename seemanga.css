@@ -1,0 +1,4217 @@
+@font-face {
+	font-family:'Indonesia';
+	src: url('../fonts/Indonesia/Indonesia.eot');
+	src: url('../fonts/Indonesia/Indonesia.woff') format('woff'), url('../fonts/Indonesia/Indonesia.ttf') format('truetype'), url('../fonts/Indonesia/Indonesia.svg') format('svg');
+}
+a:before {
+	color: #2D2F32;
+}
+a:after {
+	color: #2D2F32;
+
+}
+#index a {
+	background-color: #a32020;
+	list-style: none;
+	color: #E8EDF5;
+	line-height: 150px;
+	font-size: 40px;
+	font-family: 'Indonesia';
+	text-decoration: none;
+	border-radius: 5px;
+}
+#index ul li {
+	display: inline-block;
+	float: left;
+	color: #FF0000;
+	display: block;
+	font-size: 60px;
+	font-weight: normal;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	width: 300px;
+	margin-bottom: 50px;
+}
+.index {
+	margin-right;
+}
+#index ul li:hover {
+	
+	opacity: 0.7;
+}
+#index {
+	background-color:  #2D2F32;
+}
+#indexar a {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #a32020;
+	list-style: none;
+	color: #E8EDF5;
+	line-height: 150px;
+	font-size: 35px;
+	font-family: 'Harmattan';
+	text-decoration: none;
+	border-radius: 5px;
+}
+#indexar ul li {
+	display: inline-block;
+	float: left;
+	color: #FF0000;
+	display: block;
+	font-size: 60px;
+	font-weight: normal;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	width: 300px;
+	margin-bottom: 50px;
+}
+.indexar {
+	margin-right;
+}
+#indexar ul li:hover {
+	
+	opacity: 0.7;
+}
+#indexar {
+	background-color:  #2D2F32;
+}
+body {
+	background-color: #2D2F32;
+	margin-bottom: 100px;
+	background-image:url("#2D2F32");
+	background-attachment:fixed;
+}
+.slider {
+					margin-left: 120px;
+					margin-right: 120px;
+					margin-top: 10px;
+					border-collapse: separate;
+					position: relative;
+					max-width: 1200px;
+					overflow: hidden;
+					height: 650px;
+				}
+				.slides {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: flex;
+					max-height: 100%;
+				}
+				.slides figure {
+					display: inline-block;
+					width: 100vw;
+					max-height: 100%;
+					margin: 0;
+				}
+				@keyframes slide {
+					0%, 20%, 100%{
+						left: 0; }
+
+					35%, 50%{
+						left: -100vw;}
+
+					70%, 95%{
+						left: -200vw;}
+				}
+				.slides {
+						animation-name: slide;
+						animation-duration: 30s;
+						animation-iteration-count: infinite;
+						animation-timing-function: ease-out;
+						animation-fill-mode: forwards;
+				}
+.slides img {
+	border-radius: 20px;
+	border: solid 1px #E8EDF5;
+	margin-right: 0.5%;
+}
+.slide b {
+	font-family: 'Indonesia';
+	font-size: 30px;
+	color: #E8EDF5;
+	margin-left: 15px;
+	margin-bottom: 0px;
+
+}
+#video video{
+	border-radius: 20px;
+	border: solid #E8EDF5 1px; 
+	outline: none;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+#video ul li  :focus {
+	border-radius: 0px;
+	border: solid 0px; 
+	outline: none;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+#video ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 15px;
+}
+#video {
+	margin-left: 4%;
+	margin-right: 4%;
+	align-items: center;
+}
+
+#video p {
+	margin-left: 130px;
+	margin-right: 130px;
+}
+#video h1 {
+	font-family: 'Indonesia';
+	font-size: 50px;
+	color: #E8EDF5;
+	margin-left: 100px;
+}
+#video ul li iframe {
+	list-style: none;
+	display: inline-block;
+	border-radius: 20px;
+	outline: none;
+	margin-left: 20px;
+	margin-top: 50px;
+	border: 1px solid #E8EDF5;
+}
+#video ul li iframe:focus {
+	list-style: none;
+	display: inline-block;
+	border-radius: 0px;
+	outline: none;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+#header {
+	background: url(snkpost.jpg);
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#header p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+p {
+	color: #E8EDF5;
+	font-family: 'Indonesia';
+	font-size: 20px;
+	margin-left: 15px;
+}
+#header button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(like.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#header button:focus {
+	background: url(likeplein.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+
+#stream img {
+	margin-top: 10px;
+	border-radius: 20px;
+	margin-right: 10.5px;
+	transition: transform .2s;
+	margin-bottom: 5px;
+	height: 350px;
+	width: 250px;
+}
+#stream img:hover {
+	transform: scale(1.5);
+}
+#stream {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+#stream ul li {
+	float: left;
+	list-style: none;
+	display: inline-block;
+}
+#stream p {
+	margin: 10px;
+}
+#stream2 img {
+	margin-top: 10px;
+	border-radius: 20px;
+	margin-right: 10.5px;
+	transition: transform .2s;
+	margin-bottom: 5px;
+	height: 290px;
+	width: 190px;
+}
+#stream2 img:hover {
+	transform: scale(1.5);
+}
+#stream2 {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+#stream2 ul li {
+	float: left;
+	list-style: none;
+	display: inline-block;
+}
+#stream2 p {
+	margin: 10px;
+}
+#heades3part2 {
+	background: url(snks3part2post.jpg);
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#heades3part2 p {
+	color: white;
+	text-shadow: 0px 0px 8px black;
+}
+#heades3part2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#heades3part2 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#heades1 {
+	background: url(snks1post.jpg) bottom center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#heades1 p {
+	color: white;
+	text-shadow: 0px 0px 2px black;
+}
+#heades1 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#heades1 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#heades2 {
+	background: url(snks2post.jpg) center top;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#heades2 p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#heades2 button {
+	
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#heades2 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#heades3 {
+	background: url(snks3post.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#heades3 p {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+#heades3 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#heades3 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+h1 {
+	font-family: 'Indonesia';
+	font-size: 50px;
+	margin-left: 150px;
+	color: #E8EDF5;
+}
+#search {
+	padding-left: 5px;
+	padding-right: 9px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border: 2px #a32020 solid;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	width: 35px;
+	height: 35px;
+	outline: none;
+	padding-left: 22px;
+	padding-bottom: 7px;
+	transition: 2s;
+	background: url(loupemanga3.png) center #2D2F32 no-repeat;
+	margin-left: 12%;
+	color: #E8EDF5;
+	margin-bottom: 15px;
+}
+#2auto-suggest fieldset{
+	padding: 5px;
+	border: 2px #a32020 solid;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	width: 5px;
+	outline: none;
+	padding-left: 22px;
+	transition: 2s;
+	background: url(loupemanga3.png) center #2D2F32;
+	color: #E8EDF5;
+}
+#search:focus{
+	margin-left: 0px;
+	padding: 5px;
+	border: 2px #a32020 solid;
+	border-radius: 10px;
+	margin-bottom: 25px;
+	width: 990px;
+	outline: none; 
+	padding-left: 15px;
+	background: url(loupemanga3.png) #2D2F32 right no-repeat;
+}
+.input {
+	font-size: 15px;
+	width: 80%;
+	height: 50%;
+}
+.suggestion {
+	background: whitesmoke;
+	opacity: 0.5;
+	height: 10%;
+	width: 990px;
+	font-size: 22px;
+	font-family: 'Calibri';
+	border: #a32020 solid 1px;
+	border-radius: 10px;
+}
+.suggestion:hover {
+	opacity: 0.8;
+	color: #ffff;
+	background: #a32020;
+}
+#titre h1{
+	margin-left: 0px;
+}
+#catalog h1{
+	margin-left: 0px;
+}
+#catalog input {
+	margin-left: 0px;
+}
+#catalog {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+#catalog a {
+	margin-right: 5px;
+}
+#catalog img {
+	border-radius: 20px;
+	margin-bottom: 10px;
+	transition: transform .2s;
+	width: 235;
+	height: 139;
+}
+#catalog img {
+	width: 245px;
+	height: 149px;
+}
+#catalog img:hover {
+	 transform: scale(1.3);
+}
+#catalog2 {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+#catalog2 h1{
+	margin-left: 0px;
+}
+#catalog2 a {
+	margin-right: 5px;
+}
+#catalog2 img {
+	border-radius: 20px;
+	margin-bottom: 10px;
+	transition: transform .2s;
+	width: 260;
+	height: 368;
+}
+#catalog2 img {
+	width: 260px;
+	height: 368px;
+}
+#catalog2 img:hover {
+	 transform: scale(1.3);
+}
+#headerdn {
+	background: url(dnpost.jpg) no-repeat;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerdn p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerdn button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+#headerdn img {
+	margin-left: 10px;
+}
+#headerdn button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headersv {
+	background: url(svpost.jpg) no-repeat top center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+	background-size: cover;
+}
+
+#headersv button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+
+#headersv button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headersv p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerpancreas {
+	background: url(https://www.journaldujapon.com/wp-content/uploads/2020/06/je-veux-manger-ton-pancr%C3%A9as.png) no-repeat top center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;	
+}
+#headerpancreas img {
+	margin-left: 20px;
+}
+#headerpancreas p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerpancreas button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+
+#headerpancreas button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerb {
+	background: url(borutopost.jpg) no-repeat;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerb p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerb button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+#headerb button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerb1 {
+	background: url(borutopost2.jpg)center no-repeat;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerb1 button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+#headerb1 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerb1 p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerds {
+	background: url(dspost.jpg) right  no-repeat;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerds button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerds button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerds p {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+#headerdsfilm {
+	background: url(dspost2.jpg) center bottom no-repeat;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+
+#headerdsfilm button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+
+#headerdsfilm button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerdsfilm p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerds2 {
+	background: url(dss2post.jpg) center bottom no-repeat;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+
+#headerds2 button {
+	font-size: 30px;
+	margin-left: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+
+#headerds2 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerds2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#heades4 {
+	background: url(snks4post.jpg) left center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#heades4 p {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+#heades4 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#heades4 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#heades4p2 {
+	background: url(snks4p2post.jpg) left center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+}
+#heades4p2 p {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+#heades4p2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#heades4p2 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop {
+	background: url(opwallpaper.jpg) top center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerop button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerop button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerop5 {
+	background: url(oppost5.jpg) bottom;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerop5 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerop5 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop5 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerop6 {
+	background: url(oppost6.png) bottom;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerop6 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerop6 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop6 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerop7 {
+	background: url(oppost7.jpg) bottom;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerop7 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerop7 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop7 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerop8 {
+	background: url(oppost8.jpg) top left;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerop8 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerop8 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop8 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerop9 {
+	background: url(oppost9.jpg) top center;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerop9 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerop9 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerop9 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerin {
+	background: url(https://inazumafrontier.files.wordpress.com/2020/08/inazuma_eleven_12_years.png?w=1200) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerin p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerin button{
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerin button:focus{
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerin img {
+	margin-left: 15px;
+}
+#headerchu {
+	background: url(snkchupost.jpg) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerchu button{
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerchu button:focus{
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerchu p{
+	color: white;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headervs {
+	background: url(https://fr.techtribune.net/wp-content/uploads/2020/10/vinland-saga-1177990-1280x0.jpeg);
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headervs p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headervs button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headervs button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headervs img {
+	margin-left: 50px;
+	width: 500px;
+	height: 400px;
+}
+#headerjtsu {
+	background: url(https://assets.puzzlefactory.pl/puzzle/298/672/original.jpg) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerjtsu p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerjtsu button{
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerjtsu button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerjtsu img {
+	margin-left: 20px;
+}
+#headerdb {
+	background: url(dbpost.jpg) top;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerdb button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerdb button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerdb p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+
+#intro h2 {
+	color: #E8EDF5;
+	font-family: 'Indonesia';
+	margin-left: 150px;
+	margin-right: 100px;
+}
+#intro p {
+	color: #E8EDF5;
+	font-family: 'Anime Ace 2.0 BB';
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#headerdocstone {
+	background: url(https://otakukart.com/wp-content/uploads/2021/02/Dr.-Stone-Chapter-187-Spoilers-and-Recap.jpg) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerdocstone button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerdocstone button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerdocstone img {
+	margin-left: 50px;
+}
+#headerdocstone2 {
+	background: url(https://www.ecranlarge.com/media/cache/1600x1200/uploads/articles/001/371/763/affiche-saison-2-1371764-large.jpg) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerdocstone2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerdocstone2 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerdocstone2 img {
+	margin-left: 50px;
+}
+#headerdocstone p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerdocstone2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerhai  {
+	background: url(haipost.jpg) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerhai button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerhai button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerhai p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerhai img {
+	margin-left: 50px;
+}
+#headerhai2  {
+	background: url(haipost2.png) left top;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerhai2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerhai2 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerhai2 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerhai2 img {
+	margin-left: 50px;
+}
+#headerhai3  {
+	background: url(haipost3.jpg) left top;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerhai3 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerhai3 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerhai3 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerhai3 img {
+	margin-left: 50px;
+}
+#headerhai4  {
+	background: url(haipost4.jpg) left top;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerhai4 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerhai4 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerhai4 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headerhai4 img {
+	margin-left: 50px;
+}
+#headermoon {
+	background: url(https://actualitte.com/uploads/images/sailor-moon-eternal-film-netflix-609909de5dd65776070799.png) top;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermoon button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermoon button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headermoon p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 5px #2D2F35;
+}
+#headermoon img {
+	margin-left: 50px;
+}
+#headerups {
+	background: url(https://dg31sz3gwrwan.cloudfront.net/fanart/84660/549121-0-q80.jpg) center bottom;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerups button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerups button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerups img {
+	margin-left: 50px;
+}
+#headerups p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerss {
+	background: url(saintpost.jpg);
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerss button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerss button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerss p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 6px black;
+}
+#headerss4 {
+	background: url(ss4post.jpg);
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerss4 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerss4 button:focus {
+	background: url(likemanga.png) #a32020 no-repeat center;
+	outline: none;
+	border-radius: 100px;
+}
+#headerss4 p {
+	color: whitesmoke;
+	text-shadow: 0px 0px 6px black;
+}
+#headertr {
+	background: url(https://static1.purebreak.com/articles/5/21/49/65/@/758193-tokyo-revengers-bientot-la-fin-le-man-opengraph_1200-2.jpg);
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headertr button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+} 
+#headertr button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headertr p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headertr img {
+	margin-left: 50px;
+}
+#headerlady {
+	background: url(https://www.telerama.fr/sites/tr_master/files/styles/968x546/public/medias/2015/12/media_135810/lady-oscar-la-manga-qui-troublait-les-genres-reedite-en-dvd%2CM286073.jpg?itok=Ydw2S-sj) left center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerlady p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerlady button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerlady button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerfish {
+	background: url(bananapost.jpg) center;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerfish img {
+	margin-left: 50px;
+}
+#headerfish p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerfish button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerfish button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headernikki {
+	background: url(https://imgsrc.cineserie.com/2020/04/top-des-animes-a-voir-sur-adn-6.jpg?ver=1);
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headernikki p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headernikki img {
+	margin-left: 50px;
+}
+#headernikki button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headernikki button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerfranxx {
+	background: url(https://static2.srcdn.com/wordpress/wp-content/uploads/2021/09/darling-in-the-franxx-featured.jpg) no-repeat top left;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerfranxx img {
+	margin-left: 50px;
+}
+#headerfranxx p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerfranxx button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerfranxx button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerberserk {
+	background: url(https://prmeng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2021/05/30/node_197893/38525122/public/2021/05/30/B9727200892Z.1_20210530195141_000%2BGK5I7TGUL.1-0.jpg?itok=VXZGoL-i1622397106) no-repeat left top;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerberserk button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerberserk button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerberserk p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerlevi {
+	background: url(https://i.skyrock.net/9610/92889610/pics/3246902952_1_5_HsYyS4oK.png)no-repeat left;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+} 
+#headerlevi button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerlevi button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerlevi p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerannie {
+	background: url(anniepost.jpg)no-repeat left;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerannie p {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+#headerannie button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerannie button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermikasa {
+	background: url(mikasapost.jpg)no-repeat left;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+	background-size: cover;
+}
+#headermikasa p {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+#headermikasa button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermikasa button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerilse {
+	background: url(http://ekladata.com/Jm_GtBQ6i_8uJJwF_bw9mMzVgxI.png) no-repeat left;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerilse button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerilse button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerilse p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerjean {
+	background: url(jeanpost.png) no-repeat left;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerjean button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerjean button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerjean p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerplatinium {
+	background: url(https://fr.web.img6.acsta.net/newsv7/21/07/02/16/42/3047504.jpg)no-repeat left;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerplatinium p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerplatinium button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerplatinium button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerkaguya {
+	background: url(https://animemanganews.com/wp-content/uploads/2021/09/Kaguya-sama-Chapter-222-Spoilers-Leaks-and-Theories.jpeg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerkaguya button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerkaguya button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerkaguya p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#header86 {
+	background: url(86post.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#header86 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#header86 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#header86 p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerperiod {
+	background: url(periodpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerperiod button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerperiod button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerperiod p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerperiod img {
+	margin-left: 50px;
+}
+#headerclover {
+	background: url(cloverpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerclover button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerclover button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerclover p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerclover2 {
+	background: url(cloverpost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerclover2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerclover2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerclover2 p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerclover3 {
+	background: url(cloverpost3.jpg) bottom right;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerclover3 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerclover3 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerclover3 p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerclover4 {
+	background: url(cloverpost4.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerclover4 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerclover4 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerclover4 p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headerdororo {
+	background: url(dororopost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerdororo p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerdororo button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerdororo button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headernoragami {
+	background: url(noragamipost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headernoragami button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headernoragami button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headernoragami p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headercharlotte {
+	background: url(https://img.over-blog-kiwi.com/2/07/86/73/20180403/ob_990fb1_charlotte.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headercharlotte button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headercharlotte p {
+	color: white;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#headercharlotte button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headernana {
+	background: url(https://www.nautiljon.com/images/more/00/04/55840.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headernana button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headernana button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headernana p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerjourney {
+	background: url(journeypost.png);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerjourney button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerjourney button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerjourney p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headervnc {
+	background: url(vncpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headervnc button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headervnc button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headervnc p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headervnc2 {
+	background: url(vncpost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headervnc2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headervnc2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headervnc2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headeregg {
+	background: url(eggpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headeregg button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headeregg button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headeregg p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headershouwa {
+	background: url(shouwapost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headershouwa button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headershouwa button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headershouwa p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headershouwa2 {
+	background: url(shouwapost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headershouwa2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headershouwa2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headershouwa2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headertora {
+	background: url(torapost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headertora button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headertora button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headertora p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headergiven {
+	background: url(givenpost.gif) center;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headergiven button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headergiven button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headergiven p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headergiven2 {
+	background: url(givenpost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headergiven2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headergiven2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headergiven2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerdp {
+	background: url(dppost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerdp button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerdp button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerdp p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerorient {
+	background: url(orientpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerorient button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerorient button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerorient p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerkomi {
+	background: url(komipost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerkomi button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerkomi button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerkomi p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerran {
+	background: url(ranpost.jpg) bottom;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerran button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerran button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerran p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerran img {
+	margin-left: 50px;
+}
+#headerbullet {
+	background: url(bulletpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerbullet button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerbullet button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerbullet p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headereternity {
+	background: url(eternitypost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headereternity button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headereternity button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headereternity p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headercode {
+	background: url(codepost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headercode button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headercode button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headercode p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerchi {
+	background: url(chipost.jpg) left;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerchi button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerchi button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerchi p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headershiki {
+	background: url(shikipost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headershiki button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headershiki button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headershiki p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headertamako {
+	background: url(tamakopost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headertamako button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headertamako button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headertamako p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headertamako2 {
+	background: url(tamakopost2.png);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headertamako2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headertamako2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headertamako2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headeryuri {
+	background: url(yuripost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headeryuri button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headeryuri button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headeryuri p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headeryuri img {
+	margin: 50px 50px 50px 50px;
+}
+#headername {
+	background: url(namepost.png) center bottom;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headername button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headername button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headername p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerconte {
+	background: url(contepost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerconte button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerconte button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerconte p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerconte img {
+	margin-left: 50px;
+}
+#headergto {
+	background: url(gtopost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headergto button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headergto button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headergto p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerking {
+	background: url(kingpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerking button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerking button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerking p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerking2 {
+	background: url(kingpost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerking2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerking2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerking2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headergame {
+	background: url(gamepost.png);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headergame button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headergame button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headergame p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerbungo {
+	background: url(bungopost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerbungo button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerbungo button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerbungo p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerbungo img {
+	margin-left: 50px;
+}
+#headerbungo2 {
+	background: url(bungopost2.png);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerbungo2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerbungo2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerbungo2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerbungo2 img {
+	margin-left: 50px;
+}
+#headerbungo3 {
+	background: url(bungopost3.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerbungo3 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerbungo3 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerbungo3 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerbungo3 img {
+	margin-left: 50px;
+}
+#headerotaku {
+	background: url(otakupost.png);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerotaku button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerotaku button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerotaku p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerotaku img {
+	margin-left: 50px;
+}
+#headerparadise {
+	background: url(paradisepost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerparadise button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerparadise button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerparadise p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerpara {
+	background: url(parapost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerpara button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerpara button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerpara img {
+	margin-left: 50px;
+}
+#headerpara p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerlie {
+	background: url(liepost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerlie button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerlie button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerlie p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headermori {
+	background: url(moripost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermori button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermori button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermori p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headermori2 {
+	background: url(moripost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermori2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermori2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermori2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headermon {
+	background: url(monpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermon button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermon button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermon p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerred {
+	background: url(redpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerred button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerred button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerred p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerred img {
+	margin-left: 50px;
+}
+#headersaka {
+	background: url(sakapost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headersaka button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headersaka button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headersaka img {
+	margin-left: 50px;
+	width: 700px;
+}
+#headersaka p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headermichi {
+	background: url(michipost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermichi button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermichi button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermichi p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerride {
+	background: url(ridepost.jpg) left;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerride button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerride button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerride p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerskate {
+	background: url(skatepost.jpg) left top;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerskate button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerskate button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerskate p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerskate img {
+	margin-left: 50px;
+}
+#headersteins {
+	background: url(steinspost.jpg) left top;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headersteins button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headersteins button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headersteins p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headersteins img {
+	margin-left: 50px;
+}
+#headeranother {
+	background: url(anotherpost.jpg) left top;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headeranother button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headeranother button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headeranother p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headeranother img {
+	margin-left: 50px;
+}
+#headerping {
+	background: url(pingpost.jpg) left top;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerping button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerping button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerping p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerping img {
+	margin-left: 50px;
+}
+#headerperfect {
+	background: url(perfectpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerperfect button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerperfect button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerperfect p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerelite {
+	background: url(elitepost.jpg) left top;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerelite button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerelite button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerelite p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerelite img {
+	margin-left: 50px;
+}
+#headerbps {
+	background: url(bpspost.jpg) bottom;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerbps button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerbps button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerbps p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerbps img {
+	margin-left: 50px;
+}
+#headertoilet {
+	background: url(toiletpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headertoilet button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headertoilet button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headertoilet p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headermob {
+	background: url(mobpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermob button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermob button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermob p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headermob2 {
+	background: url(mobpost2.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headermob2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headermob2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headermob2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerseraph {
+	background: url(seraphpost.png);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerseraph button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerseraph button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerseraph p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerseraph2 {
+	background: url(seraphpost2.jpg) bottom;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerseraph2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerseraph2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerseraph2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headercow {
+	background: url(cowpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headercow button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headercow button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headercow p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerchamp {
+	background: url(champpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerchamp button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerchamp button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerchamp p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerstar {
+	background: url(starpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerstar button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerstar button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerstar p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerstar2 {
+	background: url(starpost2.jpg) bottom;
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerstar2 button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerstar2 button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerstar2 p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerstar img {
+	margin-left: 25px;
+}
+#headerneon {
+	background: url(neonpost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerneon button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerneon button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerneon p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerspy {
+	background: url(spypost.jpg);
+	background-repeat:no-repeat ;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 20px;
+}
+#headerspy button {
+	font-size: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(likemanga2.png) #E8EDF5 no-repeat center;
+	outline: none;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border:none;
+	float: right;
+}
+#headerspy button:focus {
+	background: url(likemanga.png) #a32020;
+	outline: none;
+	border-radius: 100px;
+}
+#headerspy p {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+#headerspy img {
+	margin-bottom: 50px;
+}
+#like img {
+	margin-top: 10px;
+	height: 40px;
+	align-items: center;
+}
+#likes img {
+	margin-top: 10px;
+	margin-left: 0px;
+	height: 40px;
+	width: 40px;
+	align-items: center;
+}
+#similaire img:hover {
+	 transform: scale(1.3);
+}
+#similaire {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+#likes a {
+	list-style: none;
+	color: #E8EDF5;
+	font-size: 40px;
+	font-family: 'Indonesia';
+	text-decoration: none;
+	float: right;
+	margin-right: 50px;
+	text-shadow: 0px 0px 6px #2D2F35;
+}
+#similaire img {
+	border-radius: 20px;
+	margin-bottom: 10px;
+	transition: transform .2s;
+	width: 49%;
+	height: 320px;
+}
+#similaire img:hover {
+	 transform: scale(1.3);
+}
+#similaire {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+#advice a {
+	margin-right: 50px;
+}
+#advice img {
+	border-radius: 20px;
+	
+}
+#advice img:hover {
+	transform: scale(1.5);
+	
+}
+#advice {
+}
+#top {
+	margin-left: 100px;
+	margin-right: 150px;
+}
+#top ul li{
+	list-style: none;
+	border: 1px solid #E8EDF5;
+	border-radius: 10px;
+	background-color: #a32020;
+	width: 100%;
+
+}
+#top img {
+	margin-left: 20px;
+	float: right;
+	margin-right: 25px;
+}
+#top h2 {
+	font-family: 'Indonesia';
+	font-size: 100px;
+	float: left;
+	color: #E8EDF5;
+	margin-left: 25px;
+}
+#top ul li:hover{
+	list-style: none;
+	border: 1px solid #E8EDF5;
+	border-radius: 10px;
+	background-color: #a32020;
+	opacity: 0.7;
+}
+#top p {
+	color: #a32020;
+}
+#title img {
+	margin-right: 110px;
+	margin-left: 110px;
+	text-align: center;
+}
+#critic ul li {
+	list-style: none;
+	display: inline-block;
+}
+#critic img {
+	border-radius: 10px;
+}
+#critic img:hover{
+	 transform: scale(1.25);
+	 transition: 0.5s;
+}
+#critic textarea {
+	outline: none;
+	width: 78%;
+	height: 400px;
+	margin-left: 150px;
+	border-radius: 10px;
+	writing-mode: top;
+	margin-right: 150px;
+	font-family: 'Anime Ace 2.0 BB';
+	padding: 20px 15px 20px 20px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.mySlides fade
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ul li {
+	list-style: none;
+  display: inline-block;
+}
+ul {
+  margin-right: 4px;
+  margin-left: 6px;
+}
+#form h2 {
+	font-family: 'Indonesia';
+	color: #E8EDF5;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 0px;
+}
+#form h1 {
+	font-family: 'Indonesia';
+	color: #E8EDF5;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 0px;
+}
+#form body {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+#form img {
+	border-radius: 10px;
+	border: solid 1px #E8EDF5;
+}
+#form img:hover {
+	transform: scale(2.0);
+}
+#lang a {
+	list-style: none;
+	color: #E8EDF5;
+	line-height: 150px;
+	font-size: 100px;
+	font-family: 'Indonesia';
+	text-decoration: none;
+	border-radius: 10px;
+	border: solid 1px #E8EDF5;
+	margin-right: 50px;
+}
+#lang ul li:hover {
+	transform: scale(1.5);
+}
+#news ul li {
+	list-style: none;
+	display: inline-block;
+}
+#news img {
+	border-radius: 10px;
+	border: solid 1px #E8EDF5;
+}
+#news b {
+	font-family: 'Indonesia';
+	font-size: 30px;
+	color: #E8EDF5;
+	margin-left: 15px;
+	margin-bottom: 0px;
+
+}
+#news body {
+	margin: 0px;
+}

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>See Manga!</title>
+	<link rel="icon" type="image/png" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="seemanga.css">
+</head>
+<body>
+	
+<div id="index">
+	<center>
+	<ul>
+		<li>
+			<a href="avis.html"> Avis </a>
+		</li>
+		<li>
+			<a href="nouveaute.html"> Nouveaute </a>
+		</li>
+		<li>
+			<a href="seemanga.html"> Anime </a>
+		</li>
+		<li class="index">
+			<a href="propos.html"> A propos </a>
+		</li>
+	</ul>
+	<br>
+	</center>
+</div>
+<br><br><br><br><br><br>
+<div id="catalog">
+	<h1>Choisi ton anime</h1>
+<div class="container">
+		<input type="text" class="input" id="search" placeholder="Recherchez..." name="" onchange="ouvrirPage()">
+		<div id="suggestions"></div>
+	</div>	
+
+	<script type="text/javascript">
+
+const persons = [
+	{name:'86'},
+	{name:'Another'},
+	{name:'Ao Haru Ride'},
+	{name:'A silent voice'},
+	{name:'Attaque des Titans'},
+	{name:'Banana Fish'},
+	{name:'Berserk'},
+	{name:'Black Bullet'},
+	{name:'Black Clover'},
+	{name:'Blue Period'},
+	{name:'Boruto'},
+	{name:'BPS'},
+	{name:'Bungou Stray Dogs'},
+	{name:'Charlotte'},
+	{name:'Classroom of the Elite'},
+	{name:'Code Geass'},
+	{name:'Darling in the Franxx'},
+	{name:'Death Note'},
+	{name:'Death Parad'},
+	{name:'Demon Slayer'},
+	{name:'Dororo'},
+	{name:'Dragon Ball'},
+	{name:'Dr.Stone'},
+	{name:'Given'},
+	{name:'GTO'},
+	{name:'Haikyu'},
+	{name:'Inazuma Eleven'},
+	{name:'Je veux manger ton pancreas'},
+	{name:'Jujutsu Kaisen'},
+	{name:'Kaguya sama: love is hard'},
+	{name:'Kimetsu no Yaiba'},
+	{name:'Kimi no naha'},
+	{name:'Kingdom'},
+	{name:'Komi'},
+	{name:'Lady Oscar'},
+	{name:'Le conte de la princesse Kaguya'},
+	{name:'Le voyage de Chihiro'},
+	{name:'Les chevaliers du Zodiaque'},
+	{name:'Les Memoires de Vanitas'},
+	{name:'Mirai Nikki'},
+	{name:'Moriarty'},
+	{name:'Monster'},
+	{name:'Nana'},
+	{name:'No game no life'},
+	{name:'Noragami'},
+	{name:'One Piece'},
+	{name:'Orient'},
+	{name:'Ousama Ranking'},
+	{name:'Paradise Kiss'},
+	{name:'Parasyte'},
+	{name:'Perfect Blue'},
+	{name:'Platinum end'},
+	{name:'Ping Pong'},
+	{name:'Red Garden'},
+	{name:'Sailor Moon'},
+	{name:'Saint Seiya'},
+	{name:'Sakamichi no Appolon'},
+	{name:'Sakamoto'},
+	{name:'Shiki'},
+	{name:'Shingeki no Kyojin'},
+	{name:'shouwa genroku rakugo shinjuu'},
+	{name:'Skate the Infinity'},
+	{name:'Steins Gate'},
+	{name:'Tamako market'},
+	{name:'Tokyo Revengers'},
+	{name:'Toradora'},
+	{name:'To your eternity'},
+	{name:'Uninhabited Planet Survive'},
+	{name:'Vanitas no Carte'},
+	{name:'Vinland Saga'},
+	{name:'Wonder egg Priority'},
+	{name:'Wotaku'},
+	{name:'Wotaku: Love is hard for an Otaku'},
+	{name:'Your lie in April'},
+	{name:'Your name'},
+	{name:'Yuri on the Ice'},
+	{name:'Classroom of the Elite'},
+];
+
+const searchinput = document.getElementById('search');
+
+searchinput.addEventListener('keyup', function() {
+	const input = searchinput.value;
+
+	const result = persons.filter(item => item.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
+
+	let suggestion = '';
+
+	if (input !='') {
+	result.forEach(resultItem =>
+		suggestion += `
+			<div class="suggestion">${resultItem.name}</div>
+		`
+		)
+	}
+	if (input == 'Shingeki no Kyojin') {
+				window.open("file:///E:/see_manga/snklog.html");
+				window.location('file:///E:/see_manga/snklog.html');
+	}
+	if (input == 'Attaque des Titans') {
+				window.open("file:///E:/see_manga/snklog.html");
+	}
+	if (input == 'Kimetsu no Yaiba') {
+				window.open("file:///E:/see_manga/dslog.html");
+	}
+	if (input == 'Demon Slayer') {
+				window.open("file:///E:/see_manga/dslog.html");
+	}
+	if (input == 'Death Note') {
+				window.open("file:///E:/see_manga/dnlog.html");
+	}
+	if (input == 'Boruto') {
+				window.open("file:///E:/see_manga/borutolog.html");
+	}
+	if (input == 'Jujutsu Kaisen') {
+				window.open("file:///E:/see_manga/jutsulog.html");
+	}
+	if (input == 'Jujutsu Kaisen') {
+				window.open("file:///E:/see_manga/jutsulog.html");
+	}
+	if (input == 'A silent voice') {
+				window.open("file:///E:/see_manga/sv.html");
+	}
+	if (input == 'A silent voice') {
+				window.open("file:///E:/see_manga/inazumalog.html");
+	}
+	if (input == 'One Piece') {
+				window.open("file:///E:/see_manga/oplog.html");
+	}
+	if (input == 'Vinland Saga') {
+				window.open("file:///E:/see_manga/vinlandlog.html");
+	}
+	if (input == 'Dragon Ball') {
+				window.open("file:///E:/see_manga/dblog.html");
+	}
+	if (input == 'Dr.Stone') {
+				window.open("file:///E:/see_manga/docstonelog.html");
+	}
+	if (input == 'Haikyu') {
+				window.open("file:///E:/see_manga/haikyulog.html");
+	}
+	if (input == 'Les chevaliers du Zodiaque') {
+				window.open("file:///E:/see_manga/sslog.html");
+	}
+	if (input == 'Saint Seiya') {
+				window.open("file:///E:/see_manga/sslog.html");
+	}
+	if (input == 'Sailor Moon') {
+				window.open("file:///E:/see_manga/moonlog.html");
+	}
+	if (input == 'Uninhabited Planet Survive') {
+				window.open("file:///E:/see_manga/upslog.html");
+	}
+	if (input == 'Tokyo Revengers') {
+				window.open("file:///E:/see_manga/trlog.html");
+	}
+	if (input == 'Lady Oscar') {
+				window.open("file:///E:/see_manga/ladylang.html");
+	}
+	if (input == 'Banana Fish') {
+				window.open("file:///E:/see_manga/bananalog.html");
+	}
+	if (input == 'Mirai Nikki') {
+				window.open("file:///E:/see_manga/mirailog.html");
+	}
+	if (input == 'Darling in the Franxx') {
+				window.open("file:///E:/see_manga/franxxlog.html");
+	}
+	if (input == 'Dororo') {
+				window.open("file:///E:/see_manga/dororolog.html");
+	}
+	if (input == 'Berserk') {
+				window.open("file:///E:/see_manga/berserklog.html");
+	}
+	if (input == 'Charlotte') {
+				window.open("file:///E:/see_manga/charlottelog.html");
+	}
+	if (input == 'Je veux manger ton pancreas') {
+				window.open("file:///E:/see_manga/pancreas.html");
+	}
+	if (input == 'Platinum end') {
+				window.open("file:///E:/see_manga/platiniumlog.html");
+	}
+	if (input == 'Kaguya sama: love is hard') {
+				window.open("file:///E:/see_manga/kaguyalog.html");
+	}
+	if (input == 'Kaguya sama') {
+				window.open("file:///E:/see_manga/kaguyalog.html");
+	}
+	if (input == 'Noragami') {
+				window.open("file:///E:/see_manga/noragamilog.html");
+	}
+	if (input == 'Blue Period') {
+				window.open("file:///E:/see_manga/periodlog.html");
+	}
+	if (input == 'Black Clover') {
+				window.open("file:///E:/see_manga/cloverlog.html");
+	}
+	if (input == 'Nana') {
+				window.open("file:///E:/see_manga/nanalog.html");
+	}
+	if (input == '86') {
+				window.open("file:///E:/see_manga/86log.html");
+	}
+	if (input == 'Les Memoires de Vanitas') {
+				window.open("file:///E:/see_manga/vnclog.html");
+	}
+	if (input == 'Vanitas no Carte') {
+				window.open("file:///E:/see_manga/vnclog.html");
+	}
+	if (input == 'Wonder egg Priority') {
+				window.open("file:///E:/see_manga/egglog.html");
+	}
+	if (input == 'shouwa genroku rakugo shinjuu') {
+				window.open("file:///E:/see_manga/shouwalog.html");
+	}
+	if (input == 'Shouwa') {
+				window.open("file:///E:/see_manga/shouwalog.html");
+	}
+	if (input == 'Toradora') {
+				window.open("file:///E:/see_manga/toralog.html");
+	}
+	if (input == 'Given') {
+				window.open("file:///E:/see_manga/givenlog.html");
+	}
+	if (input == 'Death Parad') {
+				window.open("file:///E:/see_manga/dplog.html");
+	}
+	if (input == 'Orient') {
+				window.open("file:///E:/see_manga/orientlog.html");
+	}
+	if (input == 'Komi cherche ses mots') {
+				window.open("file:///E:/see_manga/komilog.html");
+	}
+	if (input == 'Komi') {
+				window.open("file:///E:/see_manga/komilog.html");
+	}
+	if (input == 'Ousama Ranking') {
+				window.open("file:///E:/see_manga/ranlog.html");
+	}
+	if (input == 'Black Bullet') {
+				window.open("file:///E:/see_manga/bulletlog.html");
+	}
+	if (input == 'To your eternity') {
+				window.open("file:///E:/see_manga/eternitylog.html");
+	}
+	if (input == 'Code Geass') {
+				window.open("file:///E:/see_manga/codelog.html");
+	}
+	if (input == 'Le voyage de Chihiro') {
+				window.open("file:///E:/see_manga/chi.html");
+	}
+	if (input == 'Shiki') {
+				window.open("file:///E:/see_manga/shikilog.html");
+	}
+	if (input == 'Tamako market') {
+				window.open("file:///E:/see_manga/tamakolog.html");
+	}
+	if (input == 'Yuri on the Ice') {
+				window.open("file:///E:/see_manga/yurilog.html");
+	}
+	if (input == 'Kimi no naha') {
+				window.open("file:///E:/see_manga/name.html");
+	}
+	if (input == 'Your name') {
+				window.open("file:///E:/see_manga/name.html");
+	}
+	if (input == 'Le conte de la princesse Kaguya') {
+				window.open("file:///E:/see_manga/conte.html");
+	}
+	if (input == 'GTO') {
+				window.open("file:///E:/see_manga/gtolog.html");
+	}
+	if (input == 'Kingdom') {
+				window.open("file:///E:/see_manga/kinglog.html");
+	}
+	if (input == 'No game no life') {
+				window.open("file:///E:/see_manga/gamelog.html");
+	}
+	if (input == 'Bungou Stray Dogs') {
+				window.open("file:///E:/see_manga/bungolog.html");
+	}
+	if (input == 'Wotaku: Love is hard for an Otaku') {
+				window.open("file:///E:/see_manga/otakulog.html");
+	}
+	if (input == 'Wotaku') {
+				window.open("file:///E:/see_manga/otakulog.html");
+	}
+	if (input == 'Paradise Kiss') {
+				window.open("file:///E:/see_manga/paradiselog.html");
+	}
+	if (input == 'Parasyte') {
+				window.open("file:///E:/see_manga/paralog.html");
+	}
+	if (input == 'Your lie in April') {
+				window.open("file:///E:/see_manga/lielog.html");
+	}
+	if (input == 'Moriarty') {
+				window.open("file:///E:/see_manga/morilog.html");
+	}
+	if (input == 'Monster') {
+				window.open("file:///E:/see_manga/monlog.html");
+	}
+	if (input == 'Red Garden') {
+				window.open("file:///E:/see_manga/redlog.html");
+	}
+	if (input == 'Sakamoto') {
+				window.open("file:///E:/see_manga/sakalog.html");
+	}
+	if (input == 'Sakamichi no Appolon') {
+				window.open("file:///E:/see_manga/michilog.html");
+	}
+	if (input == 'Ao Haru Ride') {
+				window.open("file:///E:/see_manga/ridelog.html");
+	}
+	if (input == 'Skate the Infinity') {
+				window.open("file:///E:/see_manga/skatelog.html");
+	}
+	if (input == 'Steins Gate') {
+				window.open("file:///E:/see_manga/steinslog.html");
+	}
+	if (input == 'Another') {
+				window.open("file:///E:/see_manga/anotherlog.html");
+	}
+	if (input == 'Ping Pong') {
+				window.open("file:///E:/see_manga/pinglog.html");
+	}
+	if (input == 'Perfect Blue') {
+				window.open("file:///E:/see_manga/perfect.html");
+	}
+	if (input == 'Classroom of the Elite') {
+				window.open("file:///E:/see_manga/elitelog.html");
+	}
+	if (input == 'BPS') {
+				window.open("file:///E:/see_manga/bpslog.html");
+	}
+document.getElementById('suggestions').innerHTML = suggestion;
+})
+	</script>
+<br>
+	<a href="snklog.html" title="Shingeki No Kyojin" id="snk">
+					<img src="snkpost.jpg">
+				</a>
+				<a href="dslog.html" title="Demont Slayer">
+					<img src="dsaff2.jpg" alt="Demont Slayer">
+				</a>
+				<a href="dnlog.html" title="Death Note">
+					<img src="dnaff.jpg" alt="Death Note">
+				</a>
+				<a href="borutolog.html" title="Boruto">
+					<img src="borutoaff.jpg" alt="Boruto">
+				</a>
+				<a href="jutsulog.html" title="Jujutsu Kaisen">
+					<img src="jutsuaff.jpg" alt="Jujutsu">
+				</a>
+				<a href="sv.html" title="A Silent Voice">
+					<img src="svaff.jpg" alt="Silent Voice">
+				</a>
+				<a href="inazumalog.html" title="Inazuma Eleven">
+					<img src="inazumaaff.jpg" alt="Inazuma">
+				</a>
+				<a href="oplog.html" title="One Piece">
+					<img src="opaff.jpg" alt="One Piece">
+				</a>
+				<a href="vinlandlog.html" title="Vinland Saga">
+					<img src="vinlandaff.jpg" alt="Vinland">
+				</a>
+				<a href="dblog.html" title="Dragon Ball" alt="Dragon Ball">
+					<img src="dbaff.jpg" alt="Dragon Ball">
+				</a>
+				<a href="docstonelog.html" title="Docteur Stone" alt="Dragon Ball Z">
+					<img src="drstoneaff.jpg" alt="Docteur Stone">
+				</a>
+				<a href="haikyulog.html" title="Haikyu" alt="Haikyu">
+					<img src="haikyuaff.jpg" alt="Haikyu">
+				</a>
+				<a href="sslog.html" title="Saint Seiya" alt="Saint Seiya">
+					<img src="ssaff.png" alt="Saint Seiya">
+				</a>
+				<a href="moonlog.html" title="Sailor Moon" alt="Sailor">
+					<img src="moonaff.jpg" alt="Sailor Moon">
+				</a>
+				<a href="upslog.html" title="Uninhabited Planet Survive!" alt="Uninhabited Planet Survive!">
+					<img src="upsaff.jpg" alt="Uninhabited Planet Survive!">
+				</a>
+				<a href="trlog.html" title="Tokyo Revengers" alt="Tokyo Revengers">
+					<img src="traff.jpg" alt="Tokyo Revengers">
+				</a>
+				<a href="ladylang.html" title="Lady Oscars" alt="Lady Oscar">
+					<img src="ladyaff.jpg" alt="Lady Oscar">
+				</a>
+				<a href="bananalog.html" title="Banana Fish" alt="Banana Fish">
+					<img src="bananaaff.jpg" alt="Banana Fish">
+				</a>
+				<a href="mirailog.html" title="Mirai Nikki">
+					<img src="miraiaff.jpg" alt="Mirai Nikki">
+				</a>
+				<a href="franxxlog.html" title="Darling in the Franxx">
+					<img src="franxaff.jpg" alt="Darling in the Franxx">
+				</a>
+				<a href="dororolog.html" title="Dororo">
+					<img src="dororoaff.jpg" alt="Dororo">
+				</a>
+				<a href="berserklog.html" title="Berserk">
+					<img src="berserkaff.webp" alt="Berserk">
+				</a>
+				<a href="charlottelog.html" title="Charlotte">
+					<img src="charlotteaff.jpg" alt="Charlotte">
+				</a>
+				<a href="pancreas.html" title="Je veux manger ton pancréas">
+					<img src="pancreasaff.jpg" alt="Je veux manger ton pancréas">
+				</a>
+				<a href="platiniumlog.html" title="Platinium End">
+					<img src="platiniumaff.jpg" alt="Platinium">
+				</a>
+				<a href="kaguyalog.html" title="Kagura-Sama: Love is war">
+					<img src="kaguyaaff.png" alt="Kagura-Sama: Love is war">
+				</a>
+				<a href="noragamilog.html" title="Noragami">
+					<img src="noragamiaff.png" alt="Noragami">
+				</a>
+				<a href="periodlog.html" title="Blue Period">
+					<img src="periodaff.jpg" alt="Blue Period">
+				</a>
+				<a href="cloverlog.html" title="Black Clover">
+					<img src="cloveraff.jpg" alt="Black Clover">
+				</a>
+				<a href="nanalog.html" title="Nana"> 
+					<img src="nanaaff.jpg" alt="Nana">
+				</a>
+				<a href="86log.html" title="86: EIghty Six">
+					<img src="86aff.jpg" alt="86: EIghty Six">
+				</a>
+				<a href="vnclog.html" title="Vanitas no Carte">
+					<img src="vncaff.jpg" alt="Vanitas no Carte">
+				</a>
+				<a href="egglog.html" title="Wonder egg Priority">
+					<img src="wepaff.jpg" alt="Wonder egg Priority">
+				</a>
+				<a href="shouwalog.html" title="Shouwa Genroku Rakugo Shinjuu">
+					<img src="shouwaaff.jpg">
+				</a>
+				<a href="toralog.html" title="Toradora">
+					<img src="toraaff.jpg">
+				</a>
+				<a href="givenlog.html" title="Given">
+					<img src="givenaff.jpg">
+				</a>
+				<a href="dplog.html" title="Death Parade">
+					<img src="dpaff.jpg">
+				</a>
+				<a href="orientlog.html" title="Orient">
+					<img src="orientaff.jpg">
+				</a>
+				<a href="komilog.html" title="Komi cherche ses mots">
+					<img src="komiaff.png">
+				</a>
+				<a href="ranlog.html" title="Ousama Ranking">
+					<img src="usamaaff.jpg">
+				</a>
+				<a href="bulletlog.html" title="Black Bullet">
+					<img src="bulletaff.jpg">
+				</a>
+				<a href="eternitylog.html" title="To your Eternity">
+					<img src="eternityaff.jpg">
+				</a>
+				<a href="codelog.html" title="Code Geass">
+					<img src="codeaff.jpg">
+				</a>
+				<a href="chi.html" title="Le voyage de Chihiro">
+					<img src="chiaff.jpg">
+				</a>
+				<a href="shikilog.html" title="Shiki">
+					<img src="shikiaff.jpg">
+				</a>
+				<a href="tamakolog.html" title="Tamako Market">
+					<img src="tamakoaff.jpg">
+				</a>
+				<a href="yurilog.html" title="Yuri on Ice">
+					<img src="yuriaff.png">
+				</a>
+				<a href="name.html" title="Your name">
+					<img src="nameaff.png">
+				</a>
+				<a href="conte.html" title="Le conte de la princesse Kaguya">
+					<img src="conteaff.jpg">
+				</a>
+				<a href="gtolog.html" title="Great Teacher Onizuka">
+					<img src="gtoaff.png">
+				</a>
+				<a href="kinglog.html" title="Kingdom">
+					<img src="kingaff.jpg">
+				</a>
+				<a href="gamelog.html" title="No game No life">
+					<img src="gameaff.jpg">
+				</a>
+				<a href="bungolog.html" title="Bungo Stray Dogs">
+					<img src="bungoaff.png">
+				</a>
+				<a href="otakulog.html" title="Wotakoi: Love is hard for an Otaku">
+					<img src="otakuaff.png">
+				</a>
+				<a href="paradiselog.html" title="Paradise Kiss">
+					<img src="paradiseaff.jpg">
+				</a>
+				<a href="paralog.html" title="Parasyte">
+					<img src="paraaff.jpg">
+				</a>
+				<a href="lielog.html" title="Your lie in April">
+					<img src="lieaff.jpg">
+				</a>
+				<a href="morilog.html" title="Moriarty">
+					<img src="moriaff.jpg">
+				</a>
+				<a href="monlog.html" title="Monster">
+					<img src="monaff.jpg">
+				</a>
+				<a href="redlog.html" title="Red Garden">
+					<img src="redaff.jpg">
+				</a>
+				<a href="sakalog.html" title="Sakamoto">
+					<img src="sakaaff.jpg">
+				</a>
+				<a href="michilog.html" title="Sakamichi no Appolon">
+					<img src="michiaff.jpg">
+				</a>
+				<a href="ridelog.html" title="Ao Haru Ride">
+					<img src="rideaff.jpg">
+				</a>
+				<a href="skatelog.html" title="SK∞the Infinity">
+					<img src="skateaff.jpg">
+				</a>
+				<a href="steinslog.html" title="Steins Gate">
+					<img src="steinsaff.jpg">
+				</a>
+				<a href="anotherlog.html" title="Another">
+					<img src="anotheraff.jpg">
+				</a>
+				<a href="pinglog.html" title="Ping Pong">
+					<img src="pingaff.jpg">
+				</a>
+				<a href="perfect.html" title="Perfect Blue">
+					<img src="perfectaff.jpg">
+				</a>
+				<a href="elitelog.html" title="Classroom of the Elite">
+					<img src="eliteaff.jpg">
+				</a>
+				<a href="bpslog.html" title="Battle Programmer Shirase">
+					<img src="bpsaff.jpg">
+				</a>
+				<a href="toiletlog.html" title="Toilet-Bound Hanako-Kun">
+					<img src="toiletaff.jpg">
+				</a>
+				<a href="moblog.html" title="Mob Psycho 100">
+					<img src="mobaff.jpg">
+				</a>
+				<a href="seraphlog.html" title="Seraph of the End">
+					<img src="seraphaff.jpg">
+				</a>
+				<a href="cowlog.html" title="Cowboy Bebop">
+					<img src="cowaff.jpg">
+				</a>
+				<a href="champlog.html" title="Cowboy Bebop">
+					<img src="champaff.jpg">
+				</a>
+				<a href="neonlog.html" title="Neon Genesis Evangelion">
+					<img src="neonaff.jpg">
+				</a>
+				<a href="starlog.html" title="Beastar">
+					<img src="staraff.jpg">
+				</a>
+				<a href="spylog.html" title="Beastar">
+					<img src="spyaff.jpg">
+				</a>
+</div>
+</body>
+</html> 
