@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --ck-bg: #f6f7fe;
+  --ck-bg-elevated: #ffffff;
+  --ck-text: #161327;
+  --ck-text-muted: #5b5875;
+  --ck-border: #e6e4f7;
+  --ck-nav-bg: rgba(255, 255, 255, 0.75);
+  --ck-card-shadow: 0 20px 45px -20px rgba(76, 29, 149, 0.25);
+}
+
+.dark {
+  --ck-bg: #0b0a1c;
+  --ck-bg-elevated: #14122c;
+  --ck-text: #f3f1ff;
+  --ck-text-muted: #a8a4c9;
+  --ck-border: #2a2650;
+  --ck-nav-bg: rgba(11, 10, 28, 0.75);
+  --ck-card-shadow: 0 25px 60px -25px rgba(0, 0, 0, 0.6);
+}
+
+@theme inline {
+  --font-display: var(--font-fredoka);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-code);
+
+  --color-ck-bg: var(--ck-bg);
+  --color-ck-bg-elevated: var(--ck-bg-elevated);
+  --color-ck-text: var(--ck-text);
+  --color-ck-text-muted: var(--ck-text-muted);
+  --color-ck-border: var(--ck-border);
+
+  /* CodeKids brand palette */
+  --color-electric-50: #eef4ff;
+  --color-electric-100: #dbe6ff;
+  --color-electric-300: #93b4ff;
+  --color-electric-400: #5c8bff;
+  --color-electric-500: #2f63ff;
+  --color-electric-600: #1c46e0;
+  --color-electric-700: #1734ad;
+
+  --color-violet-50: #f5f0ff;
+  --color-violet-300: #c6a6ff;
+  --color-violet-400: #a771ff;
+  --color-violet-500: #8b3dff;
+  --color-violet-600: #6f22df;
+  --color-violet-700: #571ab0;
+
+  --color-cyan-300: #7cf3ff;
+  --color-cyan-400: #33e0f5;
+  --color-cyan-500: #06c2dc;
+
+  --color-sunny-300: #ffe680;
+  --color-sunny-400: #ffd23f;
+  --color-sunny-500: #ffb800;
+
+  --color-bubble-300: #ffb4e0;
+  --color-bubble-400: #ff7fc9;
+  --color-bubble-500: #ff4fb0;
+
+  --color-nightsky-500: #0b0a1c;
+  --color-nightsky-600: #060515;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-blob: blob 14s ease-in-out infinite;
+  --animate-twinkle: twinkle 3.2s ease-in-out infinite;
+  --animate-pop: pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --animate-shimmer: shimmer 2.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html.reduce-motion, html.reduce-motion * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+body {
+  background: var(--ck-bg);
+  color: var(--ck-text);
+  font-family: var(--font-sans);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(3deg); }
+}
+
+@keyframes blob {
+  0%, 100% { border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%; transform: scale(1); }
+  33% { border-radius: 60% 40% 30% 70% / 55% 65% 35% 45%; transform: scale(1.05); }
+  66% { border-radius: 35% 65% 55% 45% / 40% 55% 45% 60%; transform: scale(0.97); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  60% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.text-gradient-brand {
+  background: linear-gradient(90deg, var(--color-electric-500), var(--color-violet-500), var(--color-bubble-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-panel {
+  background: color-mix(in srgb, var(--ck-bg-elevated) 70%, transparent);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--ck-border);
+}
+
+.card-shadow {
+  box-shadow: var(--ck-card-shadow);
+}
+
+.code-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.code-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-electric-400);
+  border-radius: 999px;
+}
