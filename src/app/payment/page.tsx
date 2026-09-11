@@ -38,7 +38,7 @@ export default async function PaymentPage({
         </div>
 
         <div className="mt-8">
-          <PaymentForm level={plan.level} price={plan.price} children={children} isStripeConfigured={isStripeConfigured()} />
+          <PaymentForm level={plan.level} price={plan.price} kids={children} isStripeConfigured={isStripeConfigured()} />
         </div>
       </Card>
     </div>

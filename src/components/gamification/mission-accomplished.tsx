@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -8,19 +8,34 @@ export type NewBadge = { code: string; name: string; emoji: string };
 
 const CONFETTI_COLORS = ["#2f63ff", "#8b3dff", "#33e0f5", "#ffd23f", "#ff7fc9"];
 
-function Confetti() {
-  const [reduceMotion, setReduceMotion] = useState(false);
+function subscribeReduceMotion(callback: () => void) {
+  const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  mediaQuery.addEventListener("change", callback);
+  const observer = new MutationObserver(callback);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  return () => {
+    mediaQuery.removeEventListener("change", callback);
+    observer.disconnect();
+  };
+}
 
-  useEffect(() => {
-    try {
-      setReduceMotion(
-        document.documentElement.classList.contains("reduce-motion") ||
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches
-      );
-    } catch {
-      // ignore
-    }
-  }, []);
+function getReduceMotionSnapshot() {
+  return (
+    document.documentElement.classList.contains("reduce-motion") ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
+}
+
+function getReduceMotionServerSnapshot() {
+  return false;
+}
+
+function Confetti() {
+  const reduceMotion = useSyncExternalStore(
+    subscribeReduceMotion,
+    getReduceMotionSnapshot,
+    getReduceMotionServerSnapshot
+  );
 
   if (reduceMotion) return null;
 

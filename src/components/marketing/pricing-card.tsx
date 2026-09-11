@@ -1,6 +1,5 @@
 import { CardHoverable } from "@/components/ui/card";
 import { BadgePill } from "@/components/ui/badge-pill";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { PRICING_PLANS } from "@/data/pricing";
 

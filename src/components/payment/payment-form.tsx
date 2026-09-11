@@ -8,15 +8,15 @@ type Child = { id: string; name: string; avatarEmoji: string };
 export function PaymentForm({
   level,
   price,
-  children,
+  kids,
   isStripeConfigured,
 }: {
   level: string;
   price: number;
-  children: Child[];
+  kids: Child[];
   isStripeConfigured: boolean;
 }) {
-  const [childId, setChildId] = useState(children[0]?.id ?? "");
+  const [childId, setChildId] = useState(kids[0]?.id ?? "");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -42,7 +42,7 @@ export function PaymentForm({
     }
   }
 
-  if (children.length === 0) {
+  if (kids.length === 0) {
     return (
       <p className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:bg-amber-500/10 dark:text-amber-300">
         Ajoute d&apos;abord le profil de ton enfant depuis l&apos;espace parent avant de débloquer un niveau.
@@ -54,7 +54,7 @@ export function PaymentForm({
     <div>
       <p className="mb-2 text-sm font-semibold text-ck-text-muted">Pour quel enfant ?</p>
       <div className="flex flex-wrap gap-2">
-        {children.map((child) => (
+        {kids.map((child) => (
           <button
             key={child.id}
             type="button"

@@ -10,9 +10,9 @@ const LEVEL_OPTIONS = [
   { value: "advanced", label: "Avancé", courseName: "HTML & CSS — Niveau Avancé" },
 ];
 
-export function IssueCertificateForm({ children }: { children: { id: string; name: string }[] }) {
+export function IssueCertificateForm({ kids }: { kids: { id: string; name: string }[] }) {
   const router = useRouter();
-  const [userId, setUserId] = useState(children[0]?.id ?? "");
+  const [userId, setUserId] = useState(kids[0]?.id ?? "");
   const [level, setLevel] = useState(LEVEL_OPTIONS[0].value);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -39,7 +39,7 @@ export function IssueCertificateForm({ children }: { children: { id: string; nam
     }
   }
 
-  if (children.length === 0) {
+  if (kids.length === 0) {
     return <p className="text-sm text-ck-text-muted">Aucun compte enfant sur la plateforme pour le moment.</p>;
   }
 
@@ -48,7 +48,7 @@ export function IssueCertificateForm({ children }: { children: { id: string; nam
       <div>
         <label className="mb-1 block text-xs font-semibold text-ck-text-muted">Enfant</label>
         <select value={userId} onChange={(e) => setUserId(e.target.value)} className="w-full rounded-xl border border-ck-border bg-ck-bg px-3 py-2 text-sm">
-          {children.map((c) => (
+          {kids.map((c) => (
             <option key={c.id} value={c.id}>{c.name}</option>
           ))}
         </select>

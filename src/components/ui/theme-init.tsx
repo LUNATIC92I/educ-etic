@@ -12,6 +12,5 @@ const THEME_SCRIPT = `
 `;
 
 export function ThemeInit() {
-  // eslint-disable-next-line react/no-danger
   return <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />;
 }

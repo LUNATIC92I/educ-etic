@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Fredoka, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeInit } from "@/components/ui/theme-init";
+import { getSession } from "@/lib/session";
+import { db } from "@/lib/db";
+import { cn } from "@/lib/utils";
 
 const fredoka = Fredoka({
   variable: "--font-fredoka",
@@ -60,12 +63,21 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const session = await getSession();
+  const user = session ? await db.user.findUnique({ where: { id: session.sub }, select: { reduceMotion: true } }) : null;
+
   return (
     <html
       lang="fr"
       suppressHydrationWarning
-      className={`${fredoka.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={cn(
+        fredoka.variable,
+        inter.variable,
+        jetbrainsMono.variable,
+        "h-full antialiased",
+        user?.reduceMotion && "reduce-motion"
+      )}
     >
       <body className="min-h-full flex flex-col bg-ck-bg text-ck-text">
         <ThemeInit />

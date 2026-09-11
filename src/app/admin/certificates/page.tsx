@@ -32,7 +32,7 @@ export default async function AdminCertificatesPage() {
           formulaire uniquement pour un cas particulier.
         </p>
         <div className="mt-4">
-          <IssueCertificateForm children={children} />
+          <IssueCertificateForm kids={children} />
         </div>
       </Card>
 
