@@ -2,6 +2,7 @@ import "server-only";
 import { db } from "@/lib/db";
 import { BADGE_CATALOG } from "@/data/site";
 import { computeLevel } from "@/lib/xp";
+import { generateCertificateNumber } from "@/lib/certificate";
 
 export { computeLevel, xpRequiredForLevel } from "@/lib/xp";
 
@@ -88,5 +89,59 @@ export async function checkCompletionBadges(userId: string) {
     if (r.awarded) newlyAwarded.push(BADGE_CATALOG.find((b) => b.code === "quiz-ace")!);
   }
 
+  const completedCssLessons = await db.lessonProgress.count({
+    where: { userId, completed: true, lesson: { course: { title: { contains: "CSS" } } } },
+  });
+  if (completedCssLessons >= 3) {
+    const r = await awardBadge(userId, "css-artist");
+    if (r.awarded) newlyAwarded.push(BADGE_CATALOG.find((b) => b.code === "css-artist")!);
+  }
+
   return newlyAwarded;
+}
+
+const LEVEL_COURSE_NAME: Record<string, string> = {
+  beginner: "HTML & CSS — Niveau Débutant",
+  intermediate: "HTML & CSS — Niveau Intermédiaire",
+  advanced: "HTML & CSS — Niveau Avancé",
+};
+
+const LEVEL_COMPLETION_BADGE: Record<string, string> = {
+  intermediate: "web-creator",
+  advanced: "html-legend",
+};
+
+export async function checkAndIssueCertificate(userId: string, level: string) {
+  const courses = await db.course.findMany({ where: { level }, include: { lessons: true, quizzes: true } });
+  const totalLessons = courses.reduce((sum, c) => sum + c.lessons.length, 0);
+  const totalQuizzes = courses.reduce((sum, c) => sum + c.quizzes.length, 0);
+  if (totalLessons === 0) return null;
+
+  const doneLessons = await db.lessonProgress.count({
+    where: { userId, completed: true, lesson: { course: { level } } },
+  });
+  const attemptedQuizIds = new Set(
+    (await db.quizAttempt.findMany({ where: { userId, quiz: { course: { level } } }, select: { quizId: true } })).map(
+      (a) => a.quizId
+    )
+  );
+
+  if (doneLessons < totalLessons || attemptedQuizIds.size < totalQuizzes) return null;
+
+  const existing = await db.certificate.findUnique({ where: { userId_level: { userId, level } } });
+  if (existing) return null;
+
+  const certificate = await db.certificate.create({
+    data: {
+      userId,
+      level,
+      certificateNumber: generateCertificateNumber(level),
+      courseName: LEVEL_COURSE_NAME[level] ?? `HTML & CSS — Niveau ${level}`,
+    },
+  });
+
+  const badgeCode = LEVEL_COMPLETION_BADGE[level];
+  if (badgeCode) await awardBadge(userId, badgeCode);
+
+  return certificate;
 }
