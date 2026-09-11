@@ -6,22 +6,21 @@ import { cn } from "@/lib/utils";
 import { LogoutButton } from "@/components/dashboard/logout-button";
 
 const LINKS = [
-  { href: "/dashboard", label: "Accueil", icon: "🏠", exact: true },
-  { href: "/dashboard/progress", label: "Ma progression", icon: "📊" },
-  { href: "/dashboard/badges", label: "Mes récompenses", icon: "🏆" },
-  { href: "/dashboard/projects", label: "Mes projets", icon: "🗂️" },
-  { href: "/dashboard/certificates", label: "Mes certificats", icon: "🎓" },
-  { href: "/editor", label: "Éditeur libre", icon: "💻" },
-  { href: "/profile", label: "Mon profil", icon: "⚙️" },
+  { href: "/admin", label: "Tableau de bord", icon: "📊", exact: true },
+  { href: "/admin/courses", label: "Cours & quiz", icon: "📚" },
+  { href: "/admin/users", label: "Utilisateurs", icon: "👥" },
+  { href: "/admin/payments", label: "Paiements", icon: "💳" },
+  { href: "/admin/badges", label: "Badges", icon: "🏆" },
+  { href: "/admin/projects", label: "Projets", icon: "🗂️" },
+  { href: "/admin/certificates", label: "Certificats", icon: "🎓" },
 ];
 
-export function Sidebar() {
+export function AdminSidebar() {
   const pathname = usePathname();
-
   return (
     <aside className="hidden w-64 flex-shrink-0 flex-col border-r border-ck-border bg-ck-bg-elevated p-4 md:flex">
       <Link href="/" className="mb-6 flex items-center gap-2 px-2 font-display text-lg font-bold">
-        <span className="text-2xl">🚀</span>
+        <span className="text-2xl">🛡️</span>
         <span className="text-gradient-brand">CodeKids</span>
       </Link>
       <nav className="flex-1 space-y-1">
