@@ -1,0 +1,235 @@
+// CodeKids — Prisma schema
+//
+// Dev/demo uses SQLite (zero-config, file-based) so the app runs out of the box.
+// For production, switch the datasource below to PostgreSQL:
+//   datasource db {
+//     provider = "postgresql"
+//     url      = env("DATABASE_URL")
+//   }
+// All fields deliberately avoid SQLite/Postgres-only types (native enums, arrays)
+// so this schema works unchanged against either provider — only the
+// `provider` line and `DATABASE_URL` need to change.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// role: "PARENT" | "CHILD" | "ADMIN"
+model User {
+  id             String   @id @default(cuid())
+  email          String?  @unique
+  username       String?  @unique
+  name           String
+  passwordHash   String
+  role           String   @default("CHILD")
+  avatarEmoji    String   @default("🧑‍🚀")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  // Gamification
+  xp             Int      @default(0)
+  level          Int      @default(1)
+  streakCount    Int      @default(0)
+  lastActiveDate DateTime?
+  reduceMotion   Boolean  @default(false)
+
+  // Parent / child relationship (child.parentId -> parent.id)
+  parentId       String?
+  parent         User?    @relation("ParentChildren", fields: [parentId], references: [id], onDelete: SetNull)
+  children       User[]   @relation("ParentChildren")
+
+  enrollments    Enrollment[]
+  lessonProgress LessonProgress[]
+  quizAttempts   QuizAttempt[]
+  userBadges     UserBadge[]
+  projects       Project[]
+  certificates   Certificate[]
+  payments       Payment[]
+
+  @@index([parentId])
+}
+
+// level: "beginner" | "intermediate" | "advanced"
+model Course {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  level       String
+  title       String
+  description String
+  objective   String
+  icon        String   @default("💻")
+  order       Int      @default(0)
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  lessons     Lesson[]
+  quizzes     Quiz[]
+
+  @@index([level])
+}
+
+model Lesson {
+  id            String   @id @default(cuid())
+  courseId      String
+  course        Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  slug          String
+  title         String
+  order         Int      @default(0)
+  summary       String
+  content       String   // markdown-ish rich text
+  codeExampleHtml String @default("")
+  codeExampleCss  String @default("")
+  hasEditor     Boolean  @default(true)
+  missionPrompt String   @default("")
+  starterHtml   String   @default("")
+  starterCss    String   @default("")
+  // JSON string: { type: "css-property"|"contains", selector?, property?, value?, snippet? }
+  validationRule String  @default("{}")
+  hint          String   @default("")
+  xpReward      Int      @default(50)
+
+  progress      LessonProgress[]
+
+  @@unique([courseId, slug])
+  @@index([courseId])
+}
+
+model Quiz {
+  id        String   @id @default(cuid())
+  courseId  String
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title     String
+  xpReward  Int      @default(100)
+
+  questions   QuizQuestion[]
+  attempts    QuizAttempt[]
+
+  @@index([courseId])
+}
+
+model QuizQuestion {
+  id            String @id @default(cuid())
+  quizId        String
+  quiz          Quiz   @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  order         Int    @default(0)
+  question      String
+  choicesJson   String // JSON array of strings
+  correctIndex  Int
+  explanation   String @default("")
+
+  @@index([quizId])
+}
+
+// level: "beginner" | "intermediate" | "advanced"
+model Enrollment {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level        String
+  purchasedAt  DateTime @default(now())
+  paymentId    String?
+
+  @@unique([userId, level])
+}
+
+model LessonProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lessonId    String
+  lesson      Lesson    @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  savedHtml   String    @default("")
+  savedCss    String    @default("")
+
+  @@unique([userId, lessonId])
+  @@index([userId])
+}
+
+model QuizAttempt {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quizId      String
+  quiz        Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  score       Int
+  total       Int
+  answersJson String   @default("[]")
+  createdAt   DateTime @default(now())
+
+  @@index([userId])
+  @@index([quizId])
+}
+
+// code: unique slug e.g. "first-code", "css-artist"
+model Badge {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String
+  emoji       String
+  criteria    String   @default("")
+
+  userBadges  UserBadge[]
+}
+
+model UserBadge {
+  id       String   @id @default(cuid())
+  userId   String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badgeId  String
+  badge    Badge    @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+  earnedAt DateTime @default(now())
+
+  @@unique([userId, badgeId])
+  @@index([userId])
+}
+
+model Project {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title         String
+  html          String   @default("")
+  css           String   @default("")
+  isFinalProject Boolean @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([userId])
+}
+
+// level: "beginner" | "intermediate" | "advanced"
+model Certificate {
+  id                String   @id @default(cuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level             String
+  certificateNumber String   @unique
+  courseName        String
+  issuedAt          DateTime @default(now())
+
+  @@unique([userId, level])
+}
+
+// level: "beginner" | "intermediate" | "advanced"
+// status: "pending" | "completed" | "failed"
+model Payment {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level           String
+  amount          Int      // in cents
+  currency        String   @default("eur")
+  stripeSessionId String?  @unique
+  status          String   @default("pending")
+  createdAt       DateTime @default(now())
+
+  @@index([userId])
+}
